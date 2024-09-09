@@ -84,9 +84,6 @@ img {
     margin-top: 3px;
     padding: 0;
 }
-/* .section {
-    justify-content: center;
-} */
 
 .homeHeader {
     display: flex;
@@ -139,15 +136,32 @@ img {
     grid-template-columns: 50% 50%;
     text-align: center;
 }
+.hobbies ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+}
+/* .hobbies li {
+    width: 200%;
+    height: auto;
+    padding:0;
+    margin: 0;
+} */
+.photography {
+    width: 100%;
+    height: auto;
+}
 @media only screen and (max-width: 600px) {
     .projectList ul{
         grid-template-columns: 100%;
     }
+    .hobbies ul {
+        grid-template-columns: 100%;
+    }
 }
-.projectList img {
-    height: auto;
-    max-width: 640px;
-}
+
 
 
 

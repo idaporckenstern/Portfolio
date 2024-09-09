@@ -3,6 +3,7 @@
     <head>
         <title>About me</title>
         <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
+        <link rel="stylesheet" href="../css/main.css">
         <meta charset="UTF-8">
         <meta name="author" content="Joshua Spencer">
         <meta name="description" content="Portfolio">
@@ -10,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
+        <div id="nav">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About me</a></li>
@@ -19,8 +20,8 @@
             </ul>
         </div>
         <div>
-            <h1>About me</h1>
-            <p>
+            <h1 class="title">About me</h1>
+            <p class="subtitle">
                 My name is Josh Spencer! I graduated from Arizona State University in December 2020 with a degree in mechanical engineering.
                 After graduating I spent a few years as a high school science teacher. While I enjoyed being a teacher and helping students learn,
                 I found that I wasn't scratching that engineering itch like learning in college did. Because of this I made the decision to transistion from 
@@ -28,19 +29,28 @@
             </p>
         </div>
         
-        <div>
-            <h1>hobbies</h1>
+        <div class = "hobbies">
+            <h1 class="title">hobbies</h1>
             <p>I enjoy photography! Particularly bird photography. While I am still learning I really like going out in nature and getting good shots</p>
-        </div>
-        
-        <div>
-            <img src="../Images/Snowey egret.jpg" alt="Snowey egret" style="max-width: 40%;height: auto;">
-            <br>
-            <img src="../Images/coyote.jpg" alt="Shaggy coyote" style="max-width: 40%;height: auto;">
-            <br>
-            <img src="../Images/Redwing Blackbirds.jpg" alt="Redwing Blackbirds" style="max-width: 40%;height: auto;">
-            <br>
-            <img src="../Images/solar eclipse print.jpg" alt="solar eclipse" style="max-width: 75%;height: auto;">
+
+            <ul>
+                <li>
+                    <h4>Snowey Egret</h4>
+                    <img class="photography" src="../Images/Snowey egret.jpg" alt="Snowey egret" style="max-width: 40%;height: auto;">
+                </li>
+                <li>
+                    <h4>Coyote</h4>
+                    <img src="../Images/coyote.jpg" alt="Shaggy coyote" style="max-width: 40%;height: auto;">
+                </li>
+                <li>
+                    <h4>Redwing Blackbirds</h4>
+                    <img src="../Images/Redwing Blackbirds.jpg" alt="Redwing Blackbirds" style="max-width: 40%;height: auto;">
+                </li>
+                <li>
+                    <h4>2024 Solar eclipse</h4>
+                    <img src="../Images/solar eclipse print.jpg" alt="solar eclipse" style="max-width: 75%;height: auto;"> 
+                </li>
+            </ul>
         </div>
         
         <div id="footer">
