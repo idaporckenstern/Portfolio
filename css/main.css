@@ -132,26 +132,22 @@ img {
     margin-left: 10px;
 }
 .projectList ul{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    /* display: grid; */
+    /* grid-template-columns: 50% 50%; */
+    columns: 2;
     text-align: center;
 }
 .hobbies ul{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: left;
+    columns: 2;
+    text-align: center;
     margin: 0;
     padding: 5px;
 }
-/* .hobbies li {
-    width: 200%;
+.hobbies li {
+    width: 100%;
     height: auto;
     padding:0;
     margin: 0;
-} */
-.photography {
-    width: 100%;
-    height: auto;
 }
 @media only screen and (max-width: 600px) {
     .projectList ul{
