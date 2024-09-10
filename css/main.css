@@ -1,20 +1,27 @@
+/*  */
+/* General formatting for each page */
+/*  */
 body {
     background-color: #333;
     color: aliceblue;
 }
+.unclickable {
+    cursor: default;
+    pointer-events: none;
+    color: aliceblue;
+}
 a {
-    color:rgb(161, 211, 255);
+    color:lightblue;
     text-decoration: none;
 }
 a:hover {
-    color:rgb(228, 242, 255);
+    color:rgb(0, 134, 139);
 }
-a:visited {
-    color:rgb(255, 255, 255);
-}
+
 a:active {
     color:rgb(0, 166, 255)
 }
+
 
 ul {
     list-style-type: none;
@@ -85,6 +92,9 @@ img {
     padding: 0;
 }
 
+/*  */
+/* Home page*/
+/*  */
 .homeHeader {
     display: flex;
     margin-top: 10px;
@@ -138,6 +148,11 @@ img {
     grid-template-columns: 50% 50%;
     text-align: center;
 }
+
+/*  */
+/* about me page */
+/*  */
+
 .hobbies ul{
     columns: 2;
     text-align: center;
@@ -150,10 +165,7 @@ img {
     padding:0;
     margin: 0;
 }
-.hobbies a {
-    cursor: default;
-    pointer-events: none;
-}
+
 @media only screen and (max-width: 600px) {
     .projectList ul{
         grid-template-columns: 100%;
@@ -162,6 +174,30 @@ img {
         columns: 1;
     }
 }
+
+/*  */
+/* projects */
+/*  */
+
+.projectIntroduction {
+    display: flex;
+}
+.projectDescription{
+    margin: 0;
+    padding: 5px;
+}
+.projectPhoto{
+    
+    text-align: center;
+    padding: 5px;
+    margin-top: 1cm;
+    height: auto;
+    flex-basis: 150%;
+}
+.sourceCode{
+    text-decoration: underline;
+}
+
 
 
 
