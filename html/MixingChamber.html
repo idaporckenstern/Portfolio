@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lange="en-US">
     <head>
-        <title>Template</title>
+        <title>Mixing Chamber</title>
         <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
         <link rel="stylesheet" href="../css/main.css">
         <script src="../javascript/main.js"></script>
@@ -33,6 +33,8 @@
                     Because of this I am recreating this simulation in C++ and adding OOP principals to
                     make the simulation both faster and more robust.
                 </p>
+
+                <br>
                 <a class="sourceCode" href="https://github.com/idaporckenstern/cppMixingChamber">Source code</a>
             </div>
             
@@ -44,7 +46,140 @@
         </div>
 
         <div class="projectFineDetails">
-            
+            <h3 class="tile">Project details</h3>
+            <p class="subtitle">
+                This simulation is solved using the fractional step method. This is done by:
+            </p>
+            <ol>
+                <li>
+                    Calculate a stable time step.
+                </li>
+                <li>
+                    Using the Forward Time Center Space Method (FTCS Method) to solve the momentum equations.
+                </li>
+                <li>
+                    Correcting the velocities at the outlets to ensure that mass is conserved.
+                </li>
+                <li>
+                    Calculate the pressure using the Poisson equation.
+                </li>
+                <li>
+                    Correct the velocities using the pressure term as a Lagrange multiplier.
+                </li>
+                <li>
+                    Repeat these steps for every time step until the simulation is completed.
+                </li>
+            </ol>
+
+            <h4 class="title">Progress</h4>
+            <p class="subtitle">
+                Because I had already created the simulation in college, I had the benefit of having a solution that I could check my output to. 
+                Unfortunately, as I am not a student, I did not have the ability to run Matlab to run my code. Thankfully, there is a module in Python
+                called oct2py that let me run Matlab scpits through Python. My workflow was to implement the fractional step method step by step. After 
+                completing a step, I would double check my output from my college code through oct2py. In addition to just recreating the code in C++,
+                I also added OOP principals to make it more robust. I created classes for the mesh, inlets and outlets. This allows me to change the size,
+                position and flow for each inlet and outlet without having to make major changes to the code. I am also implementing an a JSON output, that
+                way there will be a JSON of all the data for the u, v, Y and R. This is then sent to a python script to both graph key points,
+                and create an animation of the entire simulation.
+            </p>
+            <br>
+
+            <h4 class = "title">Setbacks</h4>
+            <p>
+                Initially I was able to get the code to run through the whole 25 time units, however the output was not correct. I figured out that the 
+                outlets were not functioning correctly and just stayed open the entire simulation. The problem is that when I fixed the outlets, the 
+                simulation is not able to complete. When it is run it seems to start out normally, but once t=16, the time step drops and gets smaller
+                and smaller until it effectively freezes. I am still debugging this issue. 
+            </p>
+
+            <br>
+            <h4 class="title">Results</h4>
+            <p>This is a proof of concept of what the results will be once the bugs are worked out in the simulation. These results are not the final results</p>
+
+            <div class="animation">
+                <a class="unclickable">
+                    <h4 class="title">Animation</h4>
+                    <img src="../Images/MixingChamber/animation.gif" alt="animation">
+                </a>
+            </div>
+
+            <div class="graphs">
+                <h4 class="title">Graphs</h4>
+                <ul>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 2.png" alt="u t=2"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 5.png" alt="u t=5"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 10.png" alt="u t=10"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 15.png" alt="u t=15"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 20.png" alt="u t=15"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"></a><img src="../Images/MixingChamber/u for t = 24.png" alt="u t=24"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 2.png" alt="v t=2"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 5.png" alt="v t=5"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 10.png" alt="v t=10"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 15.png" alt="v t=15"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 20.png" alt="v t=20"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/v for t = 24.png" alt="v t=24"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 2.png" alt="Y t=2"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 5.png" alt="Y t=5"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 10.png" alt="Y t=10"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 15.png" alt="Y t=15"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 20.png" alt="Y t=20"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/Y for t = 24.png" alt="Y t=24"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 2.png" alt="R t=2"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 5.png" alt="R t=5"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 10.png" alt="R t=10"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 15.png" alt="R t=15"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 20.png" alt="R t=20"></a>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/MixingChamber/R for t = 24.png" alt="R t=24"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div id="footer">

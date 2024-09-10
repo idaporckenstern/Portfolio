@@ -84,14 +84,30 @@ img {
 }
 
 .title {
-    margin-bottom: 0;
+    margin-bottom: 2px;
     padding: 2px;
 }
 .subtitle {
-    margin-top: 3px;
+    margin: 3px;
     padding: 2px;
 }
 
+.gridList{
+    text-align: center;
+}
+.gridList ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.gridList li{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gridList ul{
+        grid-template-columns: 100%;
+    }
+}
 /*  */
 /* Home page*/
 /*  */
@@ -144,11 +160,6 @@ img {
 .projectList .title{
     margin-left: 10px;
 }
-.projectList ul{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-}
 
 /*  */
 /* about me page */
@@ -168,9 +179,6 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-    .projectList ul{
-        grid-template-columns: 100%;
-    }
     .hobbies ul {
         columns: 1;
     }
@@ -200,6 +208,27 @@ img {
 }
 
 
+/*  */
+/* mixing chamber */
+/*  */
+.animation{
+    text-align: center;
+}
+.graphs{
+    display: grid;
+    text-align: center;
+}
+.graphs ul{
+    columns: 4;
+}
+.graphs li {
+    margin-top: 5px;
+}
+/* .graphs img{
+    max-width: 80%;
+    margin: 0;
+    padding: 0;
+} */
 
 
 
