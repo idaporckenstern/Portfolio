@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lange="en-US">
+    <head>
+        <title>Server</title>
+        <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../javascript/main.js"></script>
+        <meta charset="UTF-8">
+        <meta name="author" content="Joshua Spencer">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio, Engineer, Entry level">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="todo.html">To do</a></li>
+            </ul>
+        </div>
+
+        <div class="projectIntroduction">
+            <div class="projectDescription">
+                <h1 class="title">Linux Server</h1>
+                <p>
+                    I had a friend who showed me how to use a raspberry pi to make a DNS server to make your network more private (and even block ads).
+                    I wanted to give it a try and ever since then I was hooked. The services that can be hosted on a home server are so helpful aroudnd
+                    the house and help me save money having services that would like have a subscription otherwise. This has given me the added bonus of
+                    becoming much more familiar with unix and bash.
+                </p>
+            </div>
+            <div class="projectPhoto">
+                <a class="unclickable"><img src="../Images/linux.png" alt="server"></a>
+            </div>
+        </div>
+        
+        <div class="projectFineDetails">
+            <h3 class="title">Project Details</h3>
+            <p>
+                For my server the distro I use is Proxmox. It makes creating virtual machines and LXC containers very simple and easy to manage. I have
+                a debian virtual machine that has my docker containers set up. I have a container for Portainer on their that makes it very simple to see the
+                status of all the containers and manage them. While it is very nice to easily set up docker containers, whenever possible I like to set up 
+                my services in an LXC container, where it is much easier to get into the containers to change all of the configs.
+            </p>
+
+            <br>
+            <div class="serverServices">
+                <h4>These are some of my favorite services that I have in my server</h4>
+                <ul>
+                    <li>
+                        <h3>Mealie</h3>
+                        <p>
+                            Mealie is a really cool tool. It allows you to digitalize any recipes that you have with an easy to read UI. 
+                            It also allows you to take recipes online and to import them into Mealie. This lets you have a one stop shop
+                            for all of your favorite recipes and has been a game changer for me and my wife.
+                        </p>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/Server/mealie screenshot.png" alt="mealie screenshot"></a>
+                    </li>
+                    <li>
+                        <h3>Nextcloud</h3>
+                        <p>
+                            I have recently taken up wildlife photography and I need a place to store all of my photographs. I tried google drive,
+                            but a 24 megapixel camera fills up google drive memory very quickly. Nextcloud let's me utilize the 16 terabytes of storage
+                            of my server and gives me access to my photos wherever I am. Setting Nextcloud up in an LXC container took a lot of work figuring
+                            it out, but getting it working was worth it.
+                        </p>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/Server/nextcloud screenshot.png" alt="nextcloud screenshot"></a>
+                    </li>
+                    <li>
+                        <h3>Grocy</h3>
+                        <p>
+                            Grocy is a one stop shop for all things groceries. It has a ton of features from keeping inventory or groceries
+                            to a chore chart to battery charge. We mostly use it as a grocery list. I love being able to add items and have it
+                            automatically sort into each custom category that we made, making back tracking at the store much less common.
+                        </p>
+                    </li>
+                    <li>
+                        <a class="unclickable"><img src="../Images/Server/grocy screenshot.png" alt="grocy screenshot"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Contact: <a href="mailto:spencerjosh96@gmail.com">spencerjosh96@gmail.com</a></p>
+        </div>
+    </body>
+</html>

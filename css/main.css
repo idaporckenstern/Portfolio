@@ -224,11 +224,22 @@ img {
 .graphs li {
     margin-top: 5px;
 }
-/* .graphs img{
-    max-width: 80%;
-    margin: 0;
-    padding: 0;
-} */
+
+
+/*  */
+/* server */
+/*  */
+.serverServices{
+    text-align: center;
+}
+.serverServices ul{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.serverServices li{
+    text-align: left;
+    padding: 10px;
+}
 
 
 
