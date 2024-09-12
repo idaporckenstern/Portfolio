@@ -206,6 +206,12 @@ img {
 .sourceCode{
     text-decoration: underline;
 }
+.reflection{
+    text-align: center;
+}
+.reflection p{
+    text-align: left;
+}
 
 
 /*  */
@@ -249,5 +255,13 @@ img {
 
 .seatingChartFeatures{
     text-align: center;
+}
+.seatingChartFeatures li{
+    margin-top: 5px;
+    padding: 0;
+}
+.seatingChartFeatures ul{
+    margin: 3px;
+    padding: 3px;
 }
 
