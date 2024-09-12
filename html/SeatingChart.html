@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lange="en-US">
+    <head>
+        <title>Seating Chart</title>
+        <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../javascript/main.js"></script>
+        <meta charset="UTF-8">
+        <meta name="author" content="Joshua Spencer">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio, Engineer, Entry level">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="todo.html">To do</a></li>
+            </ul>
+        </div>
+
+        <div class="projectIntroduction">
+            <div class="projectDescription">
+                <h1 class="title">Seating Chart Generator</h1>
+                <p>
+                    When I was teaching I really hated creating seating charts. This inspired me to make a seating chart generator
+                    where I could create a new seating chart with all the student names on an image with their names on their seats at
+                    the touch of a button.
+                </p>
+            </div>
+            <div class="projectPhoto">
+                <a class="unclickable"><img src="../Images/SeatingChartGenerator/Seating chart screenshot.png" alt="server"></a>
+            </div>
+        </div>
+
+        <div class="projectFineDetails">
+            <h3 class="title">Project Details</h3>
+            <p class="subtitle">
+                I used python with tKinter to create the GUI and mysql to store the students and their seats. 
+                I wanted it to be as generic as possible so I could move seats or classes and still be able to use this code.
+                I put an image that has the classroom layout and the ability to move the seat icons to where they belong. The students can
+                be organized alphabetically or randomly. Then they can be dragged and dropped to whatever seat. If there is already a student there
+                they will switch seats. I added the ability to add students by clicking the add student button, and drop students by dragging them
+                onto the drop section at the top of the page. No changes are permanent until the save button is pressed.
+            </p>
+
+            <br>
+            <div class="seatingChartFeatures">
+                <h3 class="title">Seating chart features</h3>
+                <ul>
+                    <li>
+                        <h4>Sort the students alphabetically</h4>
+                        <a class="unclickable"><img src="../Images/SeatingChartGenerator/Seating chart screenshot.png" alt="temporary"></a>
+                    </li>
+                    <li>
+                        <h4>Sort the students randomly</h4>
+                        <a class="unclickable"><img src="../Images/SeatingChartGenerator/Seating chart screenshot.png" alt="temporary"></a>
+                    </li>
+                    <li>
+                        <h4>Swap two students</h4>
+                        <a class="unclickable"><img src="../Images/SeatingChartGenerator/Seating chart screenshot.png" alt="temporary"></a>
+                    </li>
+                    <li>
+                        <h4>Add and drop students</h4>
+                        <a class="unclickable"><img src="../Images/SeatingChartGenerator/Seating chart screenshot.png" alt="temporary"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reflection">
+            <h3 class="title">Reflection</h3>
+            <p class="subtitle">
+                This is the first big functional coding project that I have done. There was a lot that I learned on the way and because of this there is a lot
+                I would change if I were to do this from scratch. The biggest thing I would change is organization. I would use OOP better to make the code more   
+                modular and easier to understand. Such as having a class that is in charge of all the GUI functionality and another that is in charge of all the database
+                functionality. As it stands it is much more jumbled and difficult to debug.
+            </p>
+        </div>
+
+        </div>
+
+        <div id="footer">
+            <p>Contact: <a href="mailto:spencerjosh96@gmail.com">spencerjosh96@gmail.com</a></p>
+        </div>
+    </body>
+</html>
