@@ -26,6 +26,8 @@ a:active {
 ul {
     list-style-type: none;
     overflow: hidden;
+    margin-left: 0;
+    padding: .5cm;
 }
 
 div {
@@ -85,11 +87,11 @@ img {
 
 .title {
     margin-bottom: 2px;
-    padding: 2px;
+    padding: 0.5cm;
 }
 .subtitle {
     margin: 3px;
-    padding: 2px;
+    padding: 0.5cm;
 }
 
 .gridList{
@@ -160,11 +162,6 @@ img {
 .projectList .title{
     margin-left: 10px;
 }
-/* #P4{
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-} */
 
 /*  */
 /* about me page */
@@ -217,7 +214,21 @@ img {
 .reflection p{
     text-align: left;
 }
-
+.cycleProject{
+    display:flex;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.previousProject{
+    text-align: left;  
+    padding-bottom: inherit;
+    margin-bottom: inherit;
+}
+.nextProject{
+    text-align: right;
+    padding-bottom: inherit;
+    margin-bottom: inherit;
+}
 
 /*  */
 /* mixing chamber */
@@ -231,6 +242,8 @@ img {
 }
 .graphs ul{
     columns: 4;
+    margin-top: 0;
+    padding-top: 0;
 }
 .graphs li {
     margin-top: 5px;
@@ -252,10 +265,11 @@ img {
 .serverServices li{
     text-align: left;
     padding: 10px;
+    margin: 0;
 }
 
 /*  */
-/* server */
+/* seating chart */
 /*  */
 
 .seatingChartFeatures{
@@ -264,9 +278,5 @@ img {
 .seatingChartFeatures li{
     margin-top: 5px;
     padding: 0;
-}
-.seatingChartFeatures ul{
-    margin: 3px;
-    padding: 3px;
 }
 

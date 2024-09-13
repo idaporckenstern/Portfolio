@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lange="en-US">
+    <head>
+        <title>Template</title>
+        <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../javascript/main.js"></script>
+        <meta charset="UTF-8">
+        <meta name="author" content="Joshua Spencer">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio, Engineer, Entry level">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <div class="projectIntroduction">
+            <div class="projectDescription">
+                <h1 class="title">Rubiks Cube solver</h1>
+                <p class="subtitle">
+                    I had been looking for a project and I saw a Rubiks cube solver online that I thought was really
+                    cool. I decided to give it a try. I am still at the very early stages in this project and so there is 
+                    still a lot to do.
+                </p>
+
+                <br>
+                <br>
+                <a href="" class="sourceCode subtitle">Source code</a>
+
+            </div>
+            <div class="projectPhoto">
+                <a class="unclickable"><img src="../Images/RubiksCube/rubiks cube.jpeg" alt="server"></a>
+            </div>
+        </div>
+
+        <div class="projectFineDetails">
+            <h3 class="title">Project details</h3>
+            <p class="subtitle">
+                In order to save in costs I am using servos to turn the Rubiks cube. My goal is to automate the entire process by having a 
+                camera read the colors on the cube and use that to solve it. I am using opencv to read the colors and give the input to the 
+                kociemba algorithm. This then gives a solution that is at most 20 turns. I have made the code to detect the colors and I am
+                currently designing the chassis to hold the camera, cube and servos.
+            </p>
+
+            <h3 class="title">To do</h3>
+            <p class="subtitle">
+                Once I have a chassis I need to calibrate the opencv code to properly store the color configuration so it can be plugged into 
+                the solver. I still haven't decided if I am going to have a servo at each face or if I will just use four and rotate the cube
+                to get the bottom and the top. The biggest issue I am running into design wise is how I can have the camera read the imput without
+                being blocked by the arms. My current plan is to have two concentric pipes. It will make a rack and pinion gear with the inner pipe being
+                the rack. A pinion is on the outside that raises the inner pipe up and down. The cube gets raised up to the camera to show a face, then 
+                switches sides and shows the camera again.
+            </p>
+
+
+            <div class="cycleProject">
+                <div class="previousProject">
+                    <a href="Website.html"><h3>Previous project</h3></a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Contact: <a href="mailto:spencerjosh96@gmail.com">spencerjosh96@gmail.com</a></p>
+        </div>
+    </body>
+</html>
