@@ -4,7 +4,6 @@
         <title>Mixing Chamber</title>
         <link rel="icon" type="image/x-icon" href="Images/Icon.ico">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="../javascript/main.js"></script>
         <meta charset="UTF-8">
         <meta name="author" content="Joshua Spencer">
         <meta name="description" content="Portfolio">
@@ -22,19 +21,19 @@
 
         <div class="projectIntroduction">
             <div class="projectDescription">
-                <h1 class="title">Mixing chamber simulation</h1>
+                <h1 class="title">Mixing Chamber Simulation</h1>
                 <p class="subtitle">
-                    This is a simulation of a 2D mixing chamber. It has 4 inlets and two oultets. 
-                    Two fluids of equal viscocity and Re are mixed together for 25 time units.
+                    This is a simulation of a 2D mixing chamber, it has four inlets and two outlets. 
+                    Two fluids of equal viscocity and Reynold's Number are mixed together for 25 time units.
                     <br>
                     I made this simulation in college in my CFD class. However, since the vast majority
                     of students only knew how to code in Matlab, the simulation was very inefficient.
-                    Because of this I am recreating this simulation in C++ and adding OOP principals to
+                    Because of this, I am recreating this simulation in C++ and adding OOP principals to
                     make the simulation both faster and more robust.
                 </p>
 
                 <br>
-                <a class="sourceCode subtitle" href="https://github.com/idaporckenstern/cppMixingChamber">Source code</a>
+                <a class="sourceCode subtitle" href="https://github.com/idaporckenstern/cppMixingChamber">Source Code</a>
             </div>
             
             <div class="projectPhoto">
@@ -51,7 +50,7 @@
             </p>
             <ol>
                 <li>
-                    Calculate a stable time step.
+                    Calculating a stable time step.
                 </li>
                 <li>
                     Using the Forward Time Center Space Method (FTCS Method) to solve the momentum equations.
@@ -60,10 +59,10 @@
                     Correcting the velocities at the outlets to ensure that mass is conserved.
                 </li>
                 <li>
-                    Calculate the pressure using the Poisson equation.
+                    Calculating the pressure using the Poisson equation.
                 </li>
                 <li>
-                    Correct the velocities using the pressure term as a Lagrange multiplier.
+                    Correcting the velocities using the pressure term as a Lagrange multiplier.
                 </li>
                 <li>
                     Repeat these steps for every time step until the simulation is completed.
@@ -72,12 +71,12 @@
 
             <h4 class="title">Progress</h4>
             <p class="subtitle">
-                Because I had already created the simulation in college, I had the benefit of having a solution that I could check my output to. 
+                Because I had already created the simulation in college, I had the benefit of having a solution to which I could check my output. 
                 Unfortunately, as I am not a student, I did not have the ability to run Matlab to run my code. Thankfully, there is a module in Python
-                called oct2py that let me run Matlab scpits through Python. My workflow was to implement the fractional step method step by step. After 
+                called oct2py that let me run Matlab scripts through Python. My workflow was to implement the fractional step method step by step. After 
                 completing a step, I would double check my output from my college code through oct2py. In addition to just recreating the code in C++,
-                I also added OOP principals to make it more robust. I created classes for the mesh, inlets and outlets. This allows me to change the size,
-                position and flow for each inlet and outlet without having to make major changes to the code. I am also implementing an a JSON output, that
+                I also added OOP principals to make it more robust. I created classes for the mesh, inlets, and outlets. This allows me to change the size,
+                position, and flow for each inlet and outlet without having to make major changes to the code. I am also implementing a JSON output, that
                 way there will be a JSON of all the data for the u, v, Y and R. This is then sent to a python script to both graph key points,
                 and create an animation of the entire simulation.
             </p>
@@ -85,15 +84,15 @@
 
             <h4 class = "title">Setbacks</h4>
             <p class="subtitle">
-                Initially I was able to get the code to run through the whole 25 time units, however the output was not correct. I figured out that the 
+                Initially, I was able to get the code to run through the whole 25 time units, however, the output was not correct. I figured out that the 
                 outlets were not functioning correctly and just stayed open the entire simulation. The problem is that when I fixed the outlets, the 
-                simulation is not able to complete. When it is run it seems to start out normally, but once t=16, the time step drops and gets smaller
+                simulation is not able to complete. When it is run, it seems to start out normally, but once t=16, the time step drops and gets smaller
                 and smaller until it effectively freezes. I am still debugging this issue. 
             </p>
 
             <br>
             <h4 class="title">Results</h4>
-            <p class="subtitle">This is a proof of concept of what the results will be once the bugs are worked out in the simulation. These results are not the final results</p>
+            <p class="subtitle">This is a proof of concept of what the results will be once the bugs are worked out in the simulation. These are not the final results.</p>
 
             <div class="animation">
                 <a class="unclickable">
@@ -183,7 +182,7 @@
 
         <div class="cycleProject">
             <div class="nextProject">
-                <a href="Server.html"><h3>Next project</h3></a>
+                <a href="Server.html"><h3>Next Project</h3></a>
             </div>
         </div>
 

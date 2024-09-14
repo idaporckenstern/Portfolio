@@ -48,12 +48,6 @@ img {
     height: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    div {
-        flex-direction: column;
-    }
-}
-
 #nav {
     background-color: black;
     display: flex;
@@ -107,11 +101,6 @@ img {
     padding: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-    .gridList ul{
-        grid-template-columns: 100%;
-    }
-}
 /*  */
 /* Home page*/
 /*  */
@@ -161,18 +150,25 @@ img {
     margin-top: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-    .meTitle {
-        max-width: 100%;
-        text-align: center;
-    }
-    .miniBio {
-        max-width: 100%;
-    }
-}
-
 .projectList .title{
-    margin-left: 10px;
+    margin: 0;
+    padding: .5cm;
+}
+.projectList li .title {
+    margin: 0;
+    padding: 0;
+}
+.projectList ul{
+    margin: 0;
+    padding: 0;
+}
+.projectList li{
+    margin: 0;
+    padding: .25cm;
+}
+.projectList img{
+    margin: 0;
+    padding: 0;
 }
 
 /*  */
@@ -190,12 +186,6 @@ img {
     height: auto;
     padding:0;
     margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    .hobbies ul {
-        columns: 1;
-    }
 }
 
 /*  */
@@ -301,4 +291,30 @@ img {
     margin: .1cm;
     padding: .1cm;
 }
+.seatingChartFeatures video{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
+@media only screen and (max-width: 600px) {
+    div {
+        flex-direction: column;
+    }
+    .gridList ul{
+        grid-template-columns: 100%;
+    }
+    .meTitle {
+        max-width: 100%;
+        text-align: center;
+    }
+    .miniBio {
+        max-width: 100%;
+    }
+    .hobbies ul {
+        columns: 1;
+    }
+    .serverServices ul{
+        grid-template-columns: 100%;
+    }
+}
