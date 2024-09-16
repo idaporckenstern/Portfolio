@@ -101,6 +101,19 @@ img {
     padding: 5px;
 }
 
+.imageLink img{
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);  /* Subtle shadow by default */
+}
+.imageLink img:hover{
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    
+    transform: translateY(-5px);
+}
+.imageLink a:hover{
+    transform: translateY(-5px);
+}
+
 /*  */
 /* Home page*/
 /*  */
@@ -156,7 +169,7 @@ img {
 }
 .projectList li .title {
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
 }
 .projectList ul{
     margin: 0;
@@ -316,5 +329,9 @@ img {
     }
     .serverServices ul{
         grid-template-columns: 100%;
+    }
+    .imageLink img{
+        border: 5px solid currentColor;
+        border-radius: 2px;
     }
 }
