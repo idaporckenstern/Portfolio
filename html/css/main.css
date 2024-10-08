@@ -90,6 +90,10 @@ img {
     padding: 0.5cm;
 }
 
+.centered {
+    text-align: center;
+}
+
 .gridList{
     text-align: center;
 }
@@ -312,6 +316,25 @@ img {
     width: 100%;
     height: auto;
     max-width: 100%;
+}
+
+
+/*  */
+/* SOLIDWORKS */
+/*  */
+.solidworksSamples{
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.solidworksSamples ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.solidworksSamples li{
+    text-align: left;
+    padding: 10px;
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
